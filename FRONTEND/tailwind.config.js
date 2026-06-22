@@ -1,0 +1,102 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+              "surface-container": "#eceef0",
+              "background": "#f7f9fb",
+              "on-tertiary-fixed-variant": "#92002a",
+              "on-tertiary-container": "#fffbff",
+              "on-primary-container": "#fefcff",
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "inverse-on-surface": "#eff1f3",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#40000d",
+              "tertiary-fixed-dim": "#ffb2b7",
+              "primary-fixed": "#d8e2ff",
+              "on-error-container": "#93000a",
+              "secondary-container": "#dae2fd",
+              "on-secondary-container": "#5c647a",
+              "on-secondary-fixed-variant": "#3f465c",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#dae2fd",
+              "surface-container-highest": "#e0e3e5",
+              "on-primary-fixed-variant": "#004395",
+              "tertiary-fixed": "#ffdadb",
+              "on-background": "#191c1e",
+              "outline": "#727785",
+              "on-secondary-fixed": "#131b2e",
+              "surface": "#f7f9fb",
+              "secondary-fixed-dim": "#bec6e0",
+              "secondary": "#565e74",
+              "on-primary": "#ffffff",
+              "surface-bright": "#f7f9fb",
+              "on-surface": "#191c1e",
+              "surface-container-low": "#f2f4f6",
+              "surface-container-high": "#e6e8ea",
+              "on-primary-fixed": "#001a42",
+              "on-surface-variant": "#424754",
+              "primary-container": "#2170e4",
+              "error-container": "#ffdad6",
+              "surface-tint": "#005ac2",
+              "primary": "#0058be",
+              "outline-variant": "#c2c6d6",
+              "primary-fixed-dim": "#adc6ff",
+              "error": "#ba1a1a",
+              "tertiary": "#b90538",
+              "tertiary-container": "#dc2c4f",
+              "inverse-surface": "#2d3133",
+              "inverse-primary": "#adc6ff",
+              "surface-variant": "#e0e3e5",
+              "surface-dim": "#d8dadc",
+              "lofo-red": "#B11226",
+              "brand-red": "#B11226"
+      },
+      "borderRadius": {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem"
+      },
+      "spacing": {
+              "xl": "8rem",
+              "sm": "1rem",
+              "xs": "0.5rem",
+              "unit": "4px",
+              "lg": "4rem",
+              "gutter": "24px",
+              "md": "2rem",
+              "margin": "32px"
+      },
+      "fontFamily": {
+              "label-bold": ["Inter"],
+              "display-xl": ["Inter"],
+              "body-md": ["Inter"],
+              "body-lg": ["Inter"],
+              "headline-md": ["Inter"],
+              "display-lg": ["Inter"],
+              "headline-lg": ["Inter"],
+              "inter": ["Inter", "sans-serif"]
+      },
+      "fontSize": {
+              "label-bold": ["14px", {"lineHeight": "100%", "letterSpacing": "0.05em", "fontWeight": "700"}],
+              "display-xl": ["120px", {"lineHeight": "105%", "letterSpacing": "-0.04em", "fontWeight": "900"}],
+              "body-md": ["16px", {"lineHeight": "160%", "letterSpacing": "0", "fontWeight": "400"}],
+              "body-lg": ["20px", {"lineHeight": "160%", "letterSpacing": "0", "fontWeight": "400"}],
+              "headline-md": ["32px", {"lineHeight": "120%", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+              "display-lg": ["80px", {"lineHeight": "110%", "letterSpacing": "-0.03em", "fontWeight": "900"}],
+              "headline-lg": ["48px", {"lineHeight": "120%", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+      }
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries')
+  ],
+}
